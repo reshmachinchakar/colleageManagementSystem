@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Student Registeration Form</title>
+    <style>
+      label{
+        color:darkblue;
+      }
+      .check{
+        color:darkviolet;
+      }
+      input[type="text"],input[type="email"]{
+
+        color: red;
+        border: 2px solid violet;
+        background-color: yellow;
+        border-radius: 20px;
+        height: 20px;
+    }
+    input[type="password"], input[type="number"]{
+        color: red;
+        border: 2px solid violet;
+        background-color: yellow;
+        border-radius: 20px;
+        height: 20px;
+    }
+    input[type="date"]{
+        border: 2px solid violet;
+        background-color: yellow;
+        border-radius: 20px;
+        width: 170px;
+        height: 20px;
+    }
+    
+
+      input[type="submit"],input[type="reset"]{
+      color:darkred;
+      background-color:violet;
+      height: 30px;
+      width: 70px;
+      border-radius: 8px;
+    }
+      
+      h2{
+        text-align: center;
+        color: brown;
+      }
+      form{
+        padding-left: 500px;
+        padding-bottom:200px;
+    
+        
+      }
+      input[type="file"]{
+        border-radius:10px;
+        color: darkred;
+       border: 1px solid;
+       display: inline-block;
+       width: 170px;
+       border: 2px solid violet;
+        background-color: yellow;
+       
+
+      }
+      .select{
+        color: darkviolet;
+        border: 2px solid violet;
+        background-color: yellow;
+        border-radius: 20px;
+        display: inline-block;
+        width: 178px;
+        height: 25px;
+      }
+      textarea{
+        border: 2px solid violet;
+        background-color: yellow;
+        border-radius: 20px;
+      }
+      body{
+        background-image:url(stackimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      input[type="submit"]:hover{
+        background-color: black;
+      }
+      input[type="reset"]:hover{
+        background-color: black;
+      }
+    
+    </style>
+</head>
+
+<body>
+  
+        <h2>Student Registeration Form</h2>
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label> Full Name:</label></td>
+                        <td><input type="text" placeholder="Capital Letters Only" required  maxlength="40">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label> Email:</label></td>
+                        <td><input type="email" placeholder="abc@gmail.com" required></td>
+
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label> </td>
+                        <td><input type="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Contact No:</label></td>
+                        <td><input type="number" placeholder="Max 10 digit" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Profile Photo:</label></td>
+                        
+                        <td><input type="file" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date of Birth:</label></td>
+                        <td><input type="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <input type="radio" name="Gender"><label style="color:darkviolet;">Male</label>
+                            <input type="radio" name="Gender"><label style="color:darkviolet;">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td><label>Marital Status:</label></td>
+                        <td>
+                            <input type="radio" name="Status"><label style="color:darkviolet;">Yes</label>
+                            <input type="radio" name="Status"><label style="color:darkviolet;">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Known Tools & Technology:</label>
+                        </td>
+                        <td >
+                            <input type="checkbox"><label class="check">Angular</label>
+                            <input type="checkbox"><label class="check">React</label>
+                            <input type="checkbox"><label class="check">Python</label>
+                            <input type="checkbox"><label class="check">Java</label>
+                            <input type="checkbox"><label class="check">Jenkin</label>
+                            <input type="checkbox"><label class="check">GIT</label>
+                            <input type="checkbox"><label class="check">Database</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Profile:</label></td>
+                        <td>
+                            <select class="select">
+                                <option>UI Developer</option>
+                                <option>Backend Developer</option>
+                                <option>Full Stack Developer</option>
+                                <option>DevOps Engineer</option>
+                                <option>Tester</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Country</label></td>
+                        <td><input type="text" placeholder="India"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Present Address:</label></td>
+                        <td>
+                            <textarea rows="7" cols="7"></textarea>
+                        </td>
+                    </tr>
+                   
+
+                    <tr>
+                        <td><input type="submit"></td>
+                        <td><input type="reset"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    
+</body>
+
+</html>
